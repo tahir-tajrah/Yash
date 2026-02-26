@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: SRFBOLD;
+  src: url("../Fonts/SFPRODISPLAYBOLD.OTF");
+}
+@font-face {
+  font-family: SRFMEDIUM;
+  src: url("../Fonts/SFPRODISPLAYMEDIUM.OTF");
+}
+@font-face {
+  font-family: SRFREGULAR;
+  src: url("../Fonts/SFPRODISPLAYREGULAR.OTF");
+}
+@font-face {
+  font-family: SRFITALIC;
+  src: url("../Fonts/SFPRODISPLAYBLACKITALIC.OTF");
+}
+@font-face {
+  font-family: SRFHEAVYI;
+  src: url("../Fonts/SFPRODISPLAYHEAVYITALIC.OTF");
+}
+@font-face {
+  font-family: SRFLIGHTI;
+  src: url("../Fonts/SFPRODISPLAYLIGHTITALIC.OTF");
+}
+@font-face {
+  font-family: SRFSEMIBOLDI;
+  src: url("../Fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF");
+}
+@font-face {
+  font-family: SRFTHINI;
+  src: url("../Fonts/SFPRODISPLAYTHINITALIC.OTF");
+}
+@font-face {
+  font-family: SRFULTRALIGHTI;
+  src: url("../Fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF");
+}
+
+@theme {
+  --color-primary: #FFFFFF;
+  --color-secondary: #7448ed;
+  --color-light: #ededed;
+  --spacing-lg: 120px;
+  --spacing-sm:26px;
+   --spacing-s:0px;
+  --background-image-white-gradient: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.75) 30%,
+      rgba(255, 255, 255, 0.5) 60%,
+      rgba(255, 255, 255, 0.3) 100%
+  );
+}
+.gradient-text {
+  background: var(--background-image-white-gradient);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  /* THIS IS THE MAGIC FOR MULTI-LINE TEXT */
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  display: inline; /* important for clone to work per line */
+}
+
+.gradient-text2 {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.34) 0%,
+    rgba(255, 255, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0.34) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline; 
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.btn-Style1{
+  background-color: #ededed;
+  border-radius: 32px;
+  padding: 14px 20px;
+  font-family: SRFMedium;
+}
+.fieldStyle{
+  border-radius: 12px;
+  padding: 14px 12px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  letter-spacing: -1%;
+  color: #7F7F7F;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(127, 127, 127, 0.25) 100%
+  );
+  backdrop-filter: blur(8px);
+}

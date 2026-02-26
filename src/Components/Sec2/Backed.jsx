@@ -9,7 +9,7 @@ const Backed = () => {
         <img className='lg:h-25 lg:rotate-0 rotate-90 h-15' src="/Images/Maskgroup(5).png" alt="" />
         <img className='w-27 h-11.75' src="/Images/Maskgroup(3).png" alt="" />
         <img className='lg:h-25 lg:rotate-0 rotate-90 h-15' src="/Images/Maskgroup(5).png" alt="" />
-        <img className='w-33 h-35.5' src="./public/Images/laila.png" alt="" />
+        <img className='w-33 h-35.5' src="./Images/laila.png" alt="" />
       </div>
     </div>
   )

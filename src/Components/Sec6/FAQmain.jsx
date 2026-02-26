@@ -1,6 +1,6 @@
 import React from 'react'
-import FAQleft from './FAQleft'
-import Rightmain from './rightmain'
+import FAQleft from './FAQleft.jsx'
+import Rightmain from './Rightmain.jsx'
 
 
 const FAQmain = () => {
